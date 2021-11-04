@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Local certs
+certs/
+
+#Stupid OSX
+.DS_Store

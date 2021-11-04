@@ -11,7 +11,10 @@ services:
         args:
           VARIANT: "3-bullseye"
           NODE_VERSION: "none"
+          EXTRA_CERTS: "include"
 
       volumes:
         - .:/workspace:cached
       command: /bin/sh -c "while sleep 1000; do :; done"
+      environment:
+        - NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
