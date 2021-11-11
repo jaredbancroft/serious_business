@@ -51,7 +51,7 @@ RUN apt-get update \
     && unzip -u /tmp/tflint.zip -d /tmp/ \
     && install -c -v /tmp/tflint /usr/local/bin \
     && rm -f /tmp/tflint.zip /tmp/tflint \
-    && curl -L -o /usr/local/bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/v0.35.6/terragrunt_linux_amd64 \
+    && curl -L -o /usr/local/bin/terragrunt https://github.com/gruntwork-io/terragrunt/releases/download/v0.35.7/terragrunt_linux_amd64 \
     && chmod 755 /usr/local/bin/terragrunt \
     && curl -L -o /tmp/awscli.zip https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip \
     && unzip -u /tmp/awscli.zip -d /tmp/ \
